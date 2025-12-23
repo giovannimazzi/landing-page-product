@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #3d3a38;
+  --secondary-color: #04df6c;
+  --tertiary_color: #2e45cc;
+}
+
+body * {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.24;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  /* font-size: 16px; */
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+}
