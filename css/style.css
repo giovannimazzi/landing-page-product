@@ -2,6 +2,8 @@
   --primary-color: #3d3a38;
   --secondary-color: #04df6c;
   --tertiary_color: #2e45cc;
+
+  --navbar-heigth: 112px;
 }
 
 body * {
@@ -23,8 +25,32 @@ h6 {
   line-height: 1.5;
 }
 
+/* .navbar {
+  height: var(--navbar-heigth);
+} */
+
 .navbar .nav-link.active {
   color: var(--tertiary_color);
+}
+
+#banner-image {
+  min-height: 512px;
+}
+
+#separator {
+  height: var(--navbar-heigth);
+  display: none;
+}
+
+.header-title-space {
+  background-image: url("../assets/img/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#header-btn {
+  border-radius: 0%;
 }
 
 footer {
@@ -39,4 +65,17 @@ footer svg {
 
 footer svg use {
   color: var(--secondary-color);
+}
+
+@media (min-width: 1400px) {
+  /* Regole valide da 1400px in su */
+
+  .header-title-space h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  #separator {
+    display: block;
+  }
 }
