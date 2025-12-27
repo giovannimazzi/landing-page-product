@@ -14,10 +14,10 @@
     <link rel="icon" href="./assets/img/fav/favicon.ico" />
 
     <!-- Bootstrap Icons -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    /> -->
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,11 +52,76 @@
     <!-- Script JS -->
     <!-- <script src="./js/main.js" defer></script> -->
   </head>
-  <body class="debug">
-    <header></header>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-white navbar-expand-xxl fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-3 ms-2" href="./index.html"
+            ><img src="./assets/img/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler border border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-filter-right fs-1"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <img src="./assets/img/logo.png" alt="logo" class="ms-2" />
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body pt-0">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-4">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#link1">I punti di forza</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#link2">Recensioni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#link3">Paperelle</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#link4">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#link5">Newsletter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <img src="./assets/img/banner-image.png" alt="" />
+    </header>
     <main></main>
     <footer>
       <p>&copy; 2024 BooLanding Product. Designed by Boolean</p>
+      <svg class="icon" width="24" height="24">
+        <use href="assets/icons.svg#instagram"></use>
+      </svg>
     </footer>
   </body>
 </html>
