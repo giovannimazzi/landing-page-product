@@ -53,6 +53,38 @@ h6 {
   border-radius: 0%;
 }
 
+#reviews .carousel-indicators {
+  position: static;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+#reviews .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #cccccc;
+  opacity: 1;
+}
+
+#reviews .carousel-indicators .active {
+  background: radial-gradient(
+    circle,
+    var(--tertiary_color) 0 50%,
+    #fff 51% 100%
+  );
+  box-shadow: 0 0 0 2px var(--tertiary_color);
+}
+
+.bi-star-fill {
+  color: #ffc10a;
+  font-size: 0.8rem;
+}
+
 footer {
   text-align: center;
 }
