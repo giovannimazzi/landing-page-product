@@ -78,4 +78,8 @@ footer svg use {
   #separator {
     display: block;
   }
+
+  .w-xxl-75 {
+    width: 75% !important;
+  }
 }
