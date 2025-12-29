@@ -137,6 +137,10 @@ h6 {
   padding-right: 0;
 }
 
+#features2 svg use {
+  color: var(--tertiary_color);
+}
+
 footer {
   text-align: center;
 }
@@ -169,5 +173,9 @@ footer svg use {
 
   #shop .subtitle {
     font-size: 0.9rem;
+  }
+
+  #faqs .accordion {
+    position: absolute;
   }
 }
