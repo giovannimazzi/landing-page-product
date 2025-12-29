@@ -97,6 +97,46 @@ h6 {
   color: var(--secondary-color);
 }
 
+#faqs .accordion-button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+  color: var(--primary-color); /* keep title color consistent */
+}
+
+#faqs .accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+#faqs .accordion-button:not(.collapsed)::after {
+  content: "−";
+}
+
+#faqs .accordion-button:not(.collapsed) {
+  color: var(--primary-color); /* avoid Bootstrap active blue */
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#faqs .accordion-item {
+  border: 0;
+}
+
+#faqs .accordion-collapse {
+  border-top: 1px solid #e5e5e5;
+}
+
+#faqs .accordion-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 footer {
   text-align: center;
 }
