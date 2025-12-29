@@ -680,7 +680,7 @@
           </div>
         </div>
       </section>
-      <section id="features2">
+      <section id="features2" class="pb-5">
         <div class="container text-center py-0 py-xxl-3">
           <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-5">
             <div
@@ -745,12 +745,116 @@
         </div>
       </section>
     </main>
-    <footer class="debug">
-      <section id="social">social</section>
-      <p>&copy; 2024 BooLanding Product. Designed by Boolean</p>
-      <svg class="icon" width="24" height="24">
-        <use href="assets/icons.svg#instagram"></use>
-      </svg>
+    <footer class="mt-5">
+      <section id="social">
+        <div
+          class="container py-3 px-0 w-50 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2 class="fw-semibold mb-5 h1">Iscriviti per rimanere aggiornato</h2>
+          <p class="mb-5 subtitle">
+            Iscriviti alla nostra newsletter per rimanere aggiornato su sconti e
+            novità
+          </p>
+
+          <form
+            class="newsletter-form text-center w-100 mb-4"
+            action="https://learning.tizianonicolai.com/request-catcher/index.php"
+            method="post"
+            novalidate
+          >
+            <div class="newsletter-field mx-auto position-relative">
+              <label for="newsletter-email" class="visually-hidden"
+                >Email</label
+              >
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                class="form-control newsletter-input fs-6"
+                placeholder="Lascia la tua email qui..."
+                autocomplete="email"
+                required
+              />
+              <button type="submit" class="send-btn" aria-label="Invia">
+                <svg
+                  class="icon"
+                  width="50"
+                  height="50"
+                  x="50%"
+                  y="50%"
+                  transform="translate(-10 -10)"
+                >
+                  <use href="assets/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div
+            class="social-link d-flex justify-content-between align-items-center w-50"
+          >
+            <a href="#facebook"
+              ><svg class="icon" width="38" height="38">
+                <use
+                  href="assets/icons.svg#facebook"
+                  width="20"
+                  height="20"
+                  x="50%"
+                  y="50%"
+                  transform="translate(-10 -10)"
+                ></use></svg
+            ></a>
+
+            <a href="#twitter"
+              ><svg class="icon" width="38" height="38">
+                <use
+                  href="assets/icons.svg#twitter"
+                  width="20"
+                  height="20"
+                  x="50%"
+                  y="50%"
+                  transform="translate(-10 -10)"
+                ></use></svg
+            ></a>
+
+            <a href="#youtube"
+              ><svg class="icon" width="38" height="38">
+                <use
+                  href="assets/icons.svg#youtube"
+                  width="20"
+                  height="20"
+                  x="50%"
+                  y="50%"
+                  transform="translate(-10 -10)"
+                ></use></svg
+            ></a>
+
+            <a href="#linkedin"
+              ><svg class="icon" width="38" height="38" x="9" y="9">
+                <use
+                  href="assets/icons.svg#linkedin"
+                  width="20"
+                  height="20"
+                  x="50%"
+                  y="50%"
+                  transform="translate(-10 -10)"
+                ></use></svg
+            ></a>
+
+            <a href="#instagram"
+              ><svg class="icon" width="38" height="38">
+                <use
+                  href="assets/icons.svg#instagram"
+                  width="20"
+                  height="20"
+                  x="50%"
+                  y="50%"
+                  transform="translate(-10 -10)"
+                ></use></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <p class="pt-3">&copy; 2024 BooLanding Product. Designed by Boolean</p>
     </footer>
   </body>
 </html>

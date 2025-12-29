@@ -85,7 +85,8 @@ h6 {
   font-size: 0.8rem;
 }
 
-#shop {
+#shop,
+#social {
   background-color: #f8f8f8;
 }
 
@@ -145,14 +146,65 @@ footer {
   text-align: center;
 }
 
-footer svg {
-  border: 2px solid gray;
-  padding: 2px;
+footer .social-link svg {
+  border: 1px solid #eaedee;
+  padding: 5px;
   border-radius: 2500rem;
 }
 
 footer svg use {
   color: var(--secondary-color);
+}
+
+#social .container {
+  max-width: 500px;
+}
+
+.social-link,
+#social form {
+  min-width: 200px;
+}
+
+#social .subtitle,
+#social .newsletter-input,
+#social .newsletter-input::placeholder {
+  font-size: 0.8rem;
+}
+
+#social .newsletter-input {
+  max-width: 560px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--bs-border-color);
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 2rem; /* room for send icon */
+}
+#social .newsletter-field {
+  max-width: 560px;
+}
+
+#social .send-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--bs-success);
+  cursor: pointer;
+}
+
+#social .send-btn:hover {
+  color: var(--bs-primary);
+}
+
+#social .newsletter-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom-color: var(--bs-primary);
 }
 
 @media (min-width: 1400px) {
